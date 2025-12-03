@@ -86,22 +86,28 @@
             📞 **Telepon:** 081314110921 | ✉️ **Email Bisnis:** ghaniacatcare@gmail.com
         </p>
 
-        <form class="contact-form" action="send_email.php" method="POST">
-            
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- WAJIB: access key Web3Forms -->
+            <input type="hidden" name="access_key" value="c47ab1ce-c4f7-463a-96f6-2eeda651fc3e">
+        
             <label for="nama_pemilik">Nama Pemilik Kucing:</label>
             <input type="text" id="nama_pemilik" name="nama_pemilik" required>
-
+        
             <label for="nama_kucing">Nama Kucing:</label>
             <input type="text" id="nama_kucing" name="nama_kucing" required>
-            
+        
             <label for="alamat">Alamat Rumah Lengkap:</label>
             <textarea id="alamat" name="alamat" rows="2" required></textarea>
-
+        
             <label for="telepon">No. Telpon:</label>
             <input type="tel" id="telepon" name="telepon" required>
-            
+        
             <label for="email">Gmail (Email Pemilik):</label>
             <input type="email" id="email" name="email" required>
+        
+            <button type="submit">Kirim Pesan</button>
+</form>
             
             <label for="layanan">Pilihan Pelayanan:</label>
             <select id="layanan" name="pilihan_layanan" required>
@@ -143,4 +149,5 @@
     </script>
 
 </body>
+
 </html>
