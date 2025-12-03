@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHANIA CAT CARE - Perawatan Kucing Penuh Kasih & Profesional</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="logo-area">
+            <span class="logo-icon">👑🐾</span> 
+            <h1 class="logo-text">GHANIA CAT CARE</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Layanan Premium</a></li>
+                <li><a href="#contact">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-title">Perawatan Kucing Terbaik, Seindah Kebaikan Anda</h2>
+            <p class="hero-subtitle">Kami menyediakan 6 layanan premium dengan kasih sayang dan standar profesional tinggi.</p>
+            <a href="#services" class="cta-button">Jelajahi Layanan</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://asset.kompas.com/crops/C7FO7q6cGnkNfd1X3qLuEczFhf0=/0x0:612x408/750x500/data/photo/2023/03/04/6402dfca4c83b.jpeg" 
+                 alt="Anak Kucing Persia Lucu dan Menggemaskan"
+                 loading="lazy">
+            <div class="ornament-paw"></div> 
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2 class="section-title">✨ 6 Layanan Eksklusif GHANIA CAT CARE ✨</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <span class="service-icon">🛁</span>
+                <h3>1. Cat Grooming</h3>
+                <p>Perawatan menyeluruh untuk bulu, kulit, kuku, dan telinga kucing Anda.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🧪</span>
+                <h3>2. Treatment Khusus</h3>
+                <p>Penanganan masalah kutu, jamur, dan kerontokan dengan metode aman & efektif.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🧬</span>
+                <h3>3. Program Cat Steril</h3>
+                <p>Edukasi dan pendampingan pra dan pasca sterilisasi yang terjamin.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🏥</span>
+                <h3>4. Pelayanan Kesehatan</h3>
+                <p>Pemeriksaan rutin, vaksinasi, dan konsultasi kesehatan dasar.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🏨</span>
+                <h3>5. Penginapan Kucing</h3>
+                <p>Hotel kucing mewah dengan kamar privat, bersih, dan pengawasan 24 jam.</p>
+            </div>
+            
+             <div class="service-card">
+                <span class="service-icon">🍽️</span>
+                <h3>6. Konsultasi Nutrisi</h3>
+                <p>Rekomendasi diet dan makanan sesuai usia, ras, dan kondisi medis kucing.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">📧 Hubungi Kami & Jadwalkan Layanan</h2>
+        
+        <p class="contact-info">
+            📞 **Telepon:** 081314110921 | ✉️ **Email Bisnis:** ghaniacatcare@gmail.com
+        </p>
+
+        <form class="contact-form" action="send_email.php" method="POST">
+            
+            <label for="nama_pemilik">Nama Pemilik Kucing:</label>
+            <input type="text" id="nama_pemilik" name="nama_pemilik" required>
+
+            <label for="nama_kucing">Nama Kucing:</label>
+            <input type="text" id="nama_kucing" name="nama_kucing" required>
+            
+            <label for="alamat">Alamat Rumah Lengkap:</label>
+            <textarea id="alamat" name="alamat" rows="2" required></textarea>
+
+            <label for="telepon">No. Telpon:</label>
+            <input type="tel" id="telepon" name="telepon" required>
+            
+            <label for="email">Gmail (Email Pemilik):</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="layanan">Pilihan Pelayanan:</label>
+            <select id="layanan" name="pilihan_layanan" required>
+                <option value="" disabled selected>--- Pilih Pelayanan Utama ---</option>
+                <option value="grooming">1. Cat Grooming</option>
+                <option value="treatment">2. Treatment Khusus</option>
+                <option value="steril">3. Program Cat Steril</option>
+                <option value="kesehatan">4. Pelayanan Kesehatan</option>
+                <option value="penginapan">5. Penginapan Kucing</option>
+                <option value="nutrisi">6. Konsultasi Nutrisi</option>
+            </select>
+            
+            <label for="pesan">Pesan Tambahan / Detail Jadwal:</label>
+            <textarea id="pesan" name="pesan" rows="4"></textarea>
+            
+            <button type="submit" class="cta-button submit-button">Kirim Pesan Sekarang</button>
+        </form>
+    </section>
+
+    <footer class="footer-container">
+        <p>&copy; 2025 GHANIA CAT CARE. Perawatan Premium untuk Sahabat Berbulu Anda.</p>
+        <div class="ornament">^._.^</div> 
+    </footer>
+    
+    <script>
+        // SCRIPT JAVASCRIPT SEDERHANA UNTUK ALERT STATUS
+        // Ini akan menampilkan notifikasi setelah formulir diproses oleh send_email.php
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        if (status === 'success') {
+            alert('Pesan Anda berhasil terkirim! Tim GHANIA CAT CARE akan segera menghubungi Anda.');
+            // Hapus parameter URL agar pesan tidak muncul lagi saat refresh
+            window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+        } else if (status === 'error') {
+            alert('Gagal mengirim pesan. Mohon cek kembali isian Anda atau hubungi kami melalui telepon.');
+             // Hapus parameter URL
+            window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+        }
+    </script>
+
+</body>
+</html>
